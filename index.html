@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FootballWallpaperDrip</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: "Times New Roman", cursive;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: red;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: blue;
+      font-family: "Times New Roman", cursive;
+    }
+
+    header p {
+      font-family: "Times New Roman", cursive;
+      font-size: 1.2em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .wallpaper {
+      border: 2px solid #001f3f;
+      padding: 10px;
+      text-align: center;
+      font-family: "Times New Roman", cursive;
+    }
+
+    .wallpaper img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: "Times New Roman", cursive;
+    }
+
+    .download-btn:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FootballWallpaperDrip</h1>
+    <p>Drip your phone with fire football wallpapers</p>
+  </header>
+
+  <div class="gallery">
+    <!-- Wallpaper 1 -->
+    <div class="wallpaper">
+      <img src="wallpaper1.jpg" alt="Football Wallpaper 1">
+      <a href="wallpaper1.jpg" download class="download-btn">Download</a>
+    </div>
+
+    <!-- Wallpaper 2 -->
+    <div class="wallpaper">
+      <img src="wallpaper2.jpg" alt="Football Wallpaper 2">
+      <a href="wallpaper2.jpg" download class="download-btn">Download</a>
+    </div>
+  </div>
+
+</body>
+</html>
